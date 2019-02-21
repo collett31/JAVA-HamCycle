@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head class= "head">
+
+		<link href="aboutMeStyle.css"  rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="navBar.css">
+
+		<title> About Collett</title>
+		<div class="header" id="myHeader">
+			<h1>COLLETT C.  CHARLTON</h1>
+		</div>
+		
+	</head>
+	<body>
+		
+		<div class="topnav" id="myTopnav">
+			  <a href="#home" class="active">Home</a>
+
+			  <a href="#news">Childhood</a>
+
+			  <a href="#contact">Current</a>
+
+			  <a href="#about">Contact</a>
+
+			  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			    <i class="fa fa-bars"></i>
+			  </a>
+		</div>
+
+		<div class="grid-container">
+		  <div>
+		  	Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+		  </div>
+
+		  <div>
+		  	Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+		  </div>
+
+		  <div>
+		  	Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. 
+		  </div>  
+		
+		</div>	
+
+		<div class = "sidebar-box">
+			
+
+			<img clas= "img" src="newBeg.jpg">
+			<h2> Childhood- My Upbringing</h2>
+			<p>
+
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+					<span id="dots">...</span><span id="more">
+
+					rgb(255,222,173)
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+					rgb(255,222,173)
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+					rgb(255,222,173)
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+					rgb(255,222,173)
+			
+
+			</span></p>
+
+				<button onclick="myFunction()" id="myBtn">Read More</button>
+			
+			<script>
+					function myFunction() {
+					  var dots = document.getElementById("dots");
+					  var moreText = document.getElementById("more");
+					  var btnText = document.getElementById("myBtn");
+
+					  if (dots.style.display === "none") {
+					    dots.style.display = "inline";
+					    btnText.innerHTML = "Read more"; 
+					    moreText.style.display = "none";
+					  } else {
+					    dots.style.display = "none";
+					    btnText.innerHTML = "Read less"; 
+					    moreText.style.display = "inline";
+					  }
+					}
+			</script>
+		</div>
+
+	</body>
+</html>
